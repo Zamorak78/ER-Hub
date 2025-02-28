@@ -1,6 +1,14 @@
 <?php
 // Define the card collections
 $collections = [
+    'puissance-genetique' => [
+        'title' => "Puissance Génétique",
+        'sectionId' => 'section1',
+        'totalCards' => 286,
+        'notGottenCards' => [230, 234, 246, 248, 252, 253, 254, 255, 257, 260, 261, 263, 264, 265, 266, 268, 269, 270, 271, 272, 276, 278, 280, 284, 285]
+
+
+    ],
     'l-ile-fabuleuse' => [
         'title' => "L'île Fabuleuse",
         'sectionId' => 'section2',
@@ -60,7 +68,103 @@ function generateCollectionHTML($collectionKey, $collection) {
 <head>
     <title>Pokemon Card Collection</title>
     <style>
-        /* Add your CSS styles here */
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Card Container */
+        .card-collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+            gap: 10px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card-collection.show-all {
+            display: block;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: left;
+            font-size: 24px;
+            /* margin-bottom: 20px; */
+            color: #333;
+        }
+
+        /* Individual Card */
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Card Image */
+        .card-image-gotten {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .card-image-not-gotten {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+            filter: grayscale(100%);
+        }
+
+        .card-image-not-gotten:hover {
+            filter: grayscale(0%);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto 20px auto;
+            padding: 0 20px;
+        }
+
+        .toggle-button {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .toggle-button:hover {
+            background-color: #2980b9;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .hidden .card {
+            display: none;
+        }
+
+        .hidden .card:has(img.card-image-not-gotten) {
+            display: block !important;
+        }
     </style>
 </head>
 <body>
