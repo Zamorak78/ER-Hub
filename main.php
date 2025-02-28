@@ -1,6 +1,14 @@
 <?php
 // Define the card collections
 $collections = [
+    'puissance-genetique' => [
+        'title' => "Puissance Génétique",
+        'sectionId' => 'section1',
+        'totalCards' => 286,
+        'notGottenCards' => [230, 234, 246, 248, 252, 253, 254, 255, 257, 260, 261, 263, 264, 265, 266, 268, 269, 270, 271, 272, 276, 278, 280, 284, 285]
+
+
+    ],
     'l-ile-fabuleuse' => [
         'title' => "L'île Fabuleuse",
         'sectionId' => 'section2',
