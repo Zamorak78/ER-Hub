@@ -40,7 +40,7 @@ function generateCollectionHTML($collectionKey, $collection) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pokemon Card Collection</title>
+    <title>L'île Fabuleuse</title>
     <style>
         /* Basic Reset */
         * {

@@ -39,7 +39,7 @@ function generateCollectionHTML($collectionKey, $collection) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pokemon Card Collection</title>
+    <title>Puissance Génétique</title>
     <style>
         /* Basic Reset */
         * {
