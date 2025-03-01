@@ -27,7 +27,7 @@ function generateCollectionHTML($collectionKey, $collection) {
     for ($i = 1; $i <= $collection['totalCards']; $i++) {
         $class = in_array($i, $collection['notGottenCards']) ? 'card-image-not-gotten' : 'card-image-gotten';
         $html .= <<<HTML
-        <div class="card">
+        <div class="card" onclick="openModal('{$baseUrl}/{$i}.webp')">
             <img src="{$baseUrl}/{$i}.webp" class="{$class}">
         </div>
         HTML;
@@ -160,6 +160,43 @@ function generateCollectionHTML($collectionKey, $collection) {
         .link-button:hover {
             background-color: #219a52;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: #bbb;
+        }
+
+        .card {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -168,6 +205,11 @@ function generateCollectionHTML($collectionKey, $collection) {
         echo generateCollectionHTML($key, $collection);
     }
     ?>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
 
     <script>
         function toggleSection(sectionId) {
@@ -185,6 +227,26 @@ function generateCollectionHTML($collectionKey, $collection) {
                     img.parentElement.style.display = 'block';
                 });
                 button.textContent = "Masquer";
+            }
+        }
+
+        // Add these new functions
+        function openModal(imageSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modal.style.display = "flex";
+            modalImg.src = imageSrc;
+        }
+
+        // Close modal when clicking the X
+        document.querySelector('.close-modal').onclick = function() {
+            document.getElementById('imageModal').style.display = "none";
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('imageModal').onclick = function(e) {
+            if (e.target === this) {
+                this.style.display = "none";
             }
         }
     </script>
