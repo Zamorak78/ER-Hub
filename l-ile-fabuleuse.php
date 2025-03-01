@@ -17,7 +17,10 @@ function generateCollectionHTML($collectionKey, $collection) {
     $html = <<<HTML
     <div class="section-header">
         <h2 class="section-title">{$collection['title']}</h2>
-        <button class="toggle-button" onclick="toggleSection('{$collection['sectionId']}')">Masquer</button>
+        <div class="button-group">
+            <button class="toggle-button" onclick="toggleSection('{$collection['sectionId']}')">Masquer</button>
+            <a href="index.html" class="link-button" target="_blank">Acceuil</a>
+        </div>
     </div>
     <div class="card-collection" id="{$collection['sectionId']}">
     HTML;
@@ -138,6 +141,25 @@ function generateCollectionHTML($collectionKey, $collection) {
 
         .hidden .card:has(img.card-image-not-gotten) {
             display: block !important;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .link-button {
+            padding: 5px 10px;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .link-button:hover {
+            background-color: #219a52;
         }
     </style>
 </head>
