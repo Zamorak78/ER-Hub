@@ -19,8 +19,8 @@ $collections = [
         'title' => 'Choc Spatio-temporel',
         'sectionId' => 'section3',
         'totalCards' => 207,
-        'notGottenCards' => [157, 158, 161, 165],
-        'displayCards' => [156, 157, 158, 159, 160, 161, 164, 165, 166, 168, 169, 171, 173, ]
+        'notGottenCards' => [157, 161, 165],
+        'displayCards' => [156, 157, 159, 160, 161, 164, 165, 166, 168, 169, 171, 173, ]
     ],
     'lumiere-triomphale' => [
         'title' => 'Lumière Triomphale',
