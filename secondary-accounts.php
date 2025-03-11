@@ -167,7 +167,7 @@ function generateCollectionHTML($collectionKey, $collection) {
 
     // Generate cards for all subcollections
     foreach ($collection as $subKey => $subCollection) {
-        $baseUrl = "https://image.pokemonpocket.fr/{$subKey}";
+        $baseUrl = "media/{$subKey}";
         
         // Only generate HTML for the specified cards
         foreach ($subCollection['displayCards'] as $cardNumber) {
