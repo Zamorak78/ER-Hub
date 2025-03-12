@@ -7,7 +7,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [23, 36, 36, 47, 47, 76, 84, 84, 84, 104, 146, 153, 227, 231, 229, 233, 236, 236, 241, 245, 248, 249, 249, 273]
+            'displayCards' => [23, 36, 36, 47, 47, 76, 84, 84, 84, 104, 146, 153, 227, 228, 231, 229, 233, 236, 236, 241, 245, 248, 249, 249, 273]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
@@ -97,7 +97,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [41, 41, 47, 76, 104, 129, 228, 230, 232, 235, 238, 246, 246, 251, 268, 271, 280]
+            'displayCards' => [41, 41, 47, 47, 76, 104, 129, 228, 230, 232, 235, 238, 246, 246, 251, 268, 271, 280]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
