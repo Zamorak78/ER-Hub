@@ -37,7 +37,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [23, 36, 36, 36, 41, 76, 84, 146, 228, 230, 235, 235, 237, 238, 281]
+            'displayCards' => [23, 36, 36, 36, 41, 76, 84, 146, 228, 228, 230, 235, 235, 237, 238, 281]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
