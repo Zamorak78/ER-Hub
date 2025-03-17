@@ -5,7 +5,7 @@ $collections = [
         'title' => 'Lumière Triomphale',
         'sectionId' => 'section4',
         'totalCards' => 96,
-        'notGottenCards' => [21, 22, 69, 76, 79, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 96]
+        'notGottenCards' => [21, 22, 76, 79, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 96]
     ]
 ];
 
