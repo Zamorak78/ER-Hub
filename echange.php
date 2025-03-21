@@ -27,7 +27,7 @@ $collections = [
         'sectionId' => 'section4',
         'totalCards' => 96,
         'notGottenCards' => [],
-        'displayCards' => [76, 79]
+        'displayCards' => [76]
     ],
     'promo-a' => [
         'title' => 'Promo-A',
