@@ -7,7 +7,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [23, 36, 36, 47, 47, 76, 76, 84, 84, 84, 104, 146, 153, 227, 228, 231, 231, 229, 233, 236, 236, 241, 245, 248, 249, 249, 272, 273]
+            'displayCards' => [23, 36, 36, 47, 47, 76, 76, 84, 84, 84, 104, 146, 153, 227, 228, 228, 229, 231, 231, 233, 236, 236, 241, 245, 248, 249, 249, 272, 273]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
@@ -67,7 +67,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [4, 41, 47, 76, 96, 228, 228, 231, 232, 236, 244, 252, 270, 271, 274, 279, 280, 281]
+            'displayCards' => [4, 41, 47, 76, 96, 228, 228, 231, 232, 234, 236, 244, 252, 270, 271, 274, 279, 280, 281]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
@@ -104,7 +104,7 @@ $collections = [
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => []
+            'displayCards' => [3]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',
@@ -134,7 +134,7 @@ $collections = [
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => []
+            'displayCards' => [71]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',

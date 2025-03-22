@@ -5,14 +5,14 @@ $collections = [
         'title' => "Puissance Génétique",
         'sectionId' => 'section1',
         'totalCards' => 286,
-        'notGottenCards' => [234],
+        'notGottenCards' => [],
         'displayCards' => [230, 234, 248] 
     ],
     'l-ile-fabuleuse' => [
         'title' => "L'île Fabuleuse",
         'sectionId' => 'section2',
         'totalCards' => 86,
-        'notGottenCards' => [69, 71],
+        'notGottenCards' => [69],
         'displayCards' => [69, 71] 
     ],
     'choc-spatio-temporel' => [
