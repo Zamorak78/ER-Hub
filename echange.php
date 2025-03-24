@@ -12,7 +12,7 @@ $collections = [
         'title' => "L'île Fabuleuse",
         'sectionId' => 'section2',
         'totalCards' => 86,
-        'notGottenCards' => [69],
+        'notGottenCards' => [],
         'displayCards' => [69, 71] 
     ],
     'choc-spatio-temporel' => [

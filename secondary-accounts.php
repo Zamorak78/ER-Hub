@@ -14,7 +14,7 @@ $collections = [
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => []
+            'displayCards' => [32]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',
@@ -44,7 +44,7 @@ $collections = [
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => [32, 32, 46, 59]
+            'displayCards' => [32, 32, 46, 59, 72, 82]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',
@@ -58,7 +58,7 @@ $collections = [
             'sectionId' => 'section4',
             'totalCards' => 96,
             'notGottenCards' => [],
-            'displayCards' => [47, 76, 77, 79]
+            'displayCards' => [10, 47, 76, 77, 79]
         ]
     ],
     'rsqake3' => [
@@ -74,7 +74,7 @@ $collections = [
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => [72]
+            'displayCards' => [32, 71, 72]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',
@@ -104,7 +104,7 @@ $collections = [
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => [3]
+            'displayCards' => [3, 69]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',
