@@ -81,7 +81,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [110, 110, 119, 119, 125, 160, 169, 173, 174, 178, 178, 179, 200]
+            'displayCards' => [110, 110, 119, 119, 125, 157, 160, 169, 173, 174, 178, 178, 179, 200]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -141,7 +141,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 29, 160, 165, 167, 172, 178, 193, 201, 204]
+            'displayCards' => [7, 29, 160, 165, 167, 167, 172, 178, 193, 201, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
