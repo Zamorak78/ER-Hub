@@ -21,7 +21,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 7, 67, 110, 156, 159, 159, 160, 164, 173, 176, 191, 204]
+            'displayCards' => [7, 7, 67, 110, 156, 159, 159, 160, 164, 171, 172, 173, 176, 191, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
