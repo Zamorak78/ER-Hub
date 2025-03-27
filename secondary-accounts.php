@@ -102,7 +102,7 @@ $collections = [
             'sectionId' => 'section4',
             'totalCards' => 96,
             'notGottenCards' => [],
-            'displayCards' => [22, 79, 80]
+            'displayCards' => [79, 80]
         ],
         'rejouissances-rayonnantes' => [
             'title' => 'Réjouissances Rayonnantes',
