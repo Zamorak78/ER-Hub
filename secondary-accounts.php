@@ -29,6 +29,13 @@ $collections = [
             'totalCards' => 96,
             'notGottenCards' => [],
             'displayCards' => [22, 94]
+        ],
+        'rejouissances-rayonnantes' => [
+            'title' => 'Réjouissances Rayonnantes',
+            'sectionId' => 'section5',
+            'totalCards' => 111,
+            'notGottenCards' => [],
+            'displayCards' => []
         ]
     ],
     'rsqake2' => [
@@ -59,6 +66,13 @@ $collections = [
             'totalCards' => 96,
             'notGottenCards' => [],
             'displayCards' => [10, 47, 76, 77, 79]
+        ],
+        'rejouissances-rayonnantes' => [
+            'title' => 'Réjouissances Rayonnantes',
+            'sectionId' => 'section5',
+            'totalCards' => 111,
+            'notGottenCards' => [],
+            'displayCards' => [75]
         ]
     ],
     'rsqake3' => [
@@ -89,6 +103,13 @@ $collections = [
             'totalCards' => 96,
             'notGottenCards' => [],
             'displayCards' => [22, 79, 80]
+        ],
+        'rejouissances-rayonnantes' => [
+            'title' => 'Réjouissances Rayonnantes',
+            'sectionId' => 'section5',
+            'totalCards' => 111,
+            'notGottenCards' => [],
+            'displayCards' => [78]
         ]
     ],
     'rsqake4' => [
@@ -111,7 +132,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 119, 168, 171, 173, 175, 176, 178, 186, 203, 204]
+            'displayCards' => [7, 119, 164, 168, 171, 173, 175, 176, 178, 186, 203, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -119,6 +140,13 @@ $collections = [
             'totalCards' => 96,
             'notGottenCards' => [],
             'displayCards' => [10, 76, 77, 84]
+        ],
+        'rejouissances-rayonnantes' => [
+            'title' => 'Réjouissances Rayonnantes',
+            'sectionId' => 'section5',
+            'totalCards' => 111,
+            'notGottenCards' => [],
+            'displayCards' => []
         ]
     ],
     'rsqake5' => [
@@ -149,6 +177,13 @@ $collections = [
             'totalCards' => 96,
             'notGottenCards' => [],
             'displayCards' => [47, 57, 71, 76, 79, 94]
+        ],
+        'rejouissances-rayonnantes' => [
+            'title' => 'Réjouissances Rayonnantes',
+            'sectionId' => 'section5',
+            'totalCards' => 111,
+            'notGottenCards' => [],
+            'displayCards' => []
         ]
     ]
 ];
