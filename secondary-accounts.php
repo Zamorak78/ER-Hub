@@ -21,7 +21,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 7, 67, 110, 156, 159, 159, 160, 164, 171, 172, 173, 176, 191, 204]
+            'displayCards' => [7, 7, 67, 110, 156, 158, 159, 159, 160, 164, 171, 172, 173, 176, 191, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -58,7 +58,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [29, 61, 99, 125, 156, 156, 159, 166, 173, 173, 174, 205]
+            'displayCards' => [29, 61, 99, 125, 156, 156, 159, 166, 169, 173, 173, 174, 205]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -95,7 +95,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [110, 110, 119, 119, 125, 157, 160, 169, 173, 174, 178, 178, 179, 200]
+            'displayCards' => [110, 110, 119, 119, 125, 157, 160, 169, 172, 173, 174, 178, 178, 179, 200]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -169,7 +169,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 29, 160, 165, 167, 167, 172, 178, 193, 201, 204]
+            'displayCards' => [7, 49, 29, 160, 165, 167, 167, 172, 178, 193, 201, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
