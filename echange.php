@@ -22,13 +22,13 @@ $collections = [
         'notGottenCards' => [161],
         'displayCards' => [156, 157, 160, 161, 165, 166, 168, 171, 173, ]
     ],
-    'lumiere-triomphale' => [
-        'title' => 'Lumière Triomphale',
-        'sectionId' => 'section4',
-        'totalCards' => 96,
-        'notGottenCards' => [],
-        'displayCards' => []
-    ],
+    // 'lumiere-triomphale' => [
+    //     'title' => 'Lumière Triomphale',
+    //     'sectionId' => 'section4',
+    //     'totalCards' => 96,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ],
     'rejouissances-rayonnantes' => [
         'title' => 'Réjouissances Rayonnantes',
         'sectionId' => 'section5',
