@@ -36,13 +36,13 @@ $collections = [
         'notGottenCards' => [],
         'displayCards' => []
     ],
-    'promo-a' => [
-        'title' => 'Promo-A',
-        'sectionId' => 'section100',
-        'totalCards' => 49,
-        'notGottenCards' => [],
-        'displayCards' => []
-    ]
+    // 'promo-a' => [
+    //     'title' => 'Promo-A',
+    //     'sectionId' => 'section100',
+    //     'totalCards' => 49,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ]
 ];
 
 // Function to generate the HTML for a collection
