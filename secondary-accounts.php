@@ -72,7 +72,7 @@ $collections = [
             'sectionId' => 'section5',
             'totalCards' => 111,
             'notGottenCards' => [],
-            'displayCards' => [75]
+            'displayCards' => [43, 75]
         ]
     ],
     'rsqake3' => [
@@ -169,7 +169,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 49, 29, 160, 165, 167, 167, 172, 178, 193, 201, 204]
+            'displayCards' => [7, 49, 49, 29, 160, 165, 167, 167, 172, 178, 193, 201, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
