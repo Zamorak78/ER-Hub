@@ -58,7 +58,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [29, 61, 99, 125, 156, 156, 159, 166, 169, 173, 173, 174, 205]
+            'displayCards' => [29, 61, 67, 99, 125, 156, 156, 159, 166, 169, 173, 173, 174, 205]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -95,7 +95,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [110, 110, 119, 119, 125, 157, 160, 168, 169, 172, 173, 174, 178, 178, 179, 200]
+            'displayCards' => [49, 110, 110, 119, 119, 125, 157, 160, 168, 169, 172, 173, 174, 178, 178, 179, 200]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -109,7 +109,7 @@ $collections = [
             'sectionId' => 'section5',
             'totalCards' => 111,
             'notGottenCards' => [],
-            'displayCards' => [78]
+            'displayCards' => [54, 78]
         ]
     ],
     'rsqake4' => [
@@ -183,7 +183,7 @@ $collections = [
             'sectionId' => 'section5',
             'totalCards' => 111,
             'notGottenCards' => [],
-            'displayCards' => []
+            'displayCards' => [76]
         ]
     ]
 ];
