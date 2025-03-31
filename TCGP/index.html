@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCGP</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Box Styling */
+        .grid-box {
+            aspect-ratio: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .grid-box:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Example boxes - Replace href and src with your actual links and images -->
+        <a href="puissance-genetique.php" class="grid-box">
+            <img src="media/index/puissance-genetique.png">
+        </a>
+        <a href="l-ile-fabuleuse.php" class="grid-box">
+            <img src="media/index/l-ile-fabuleuse.png">
+        </a>
+        <a href="choc-spatio-temporel.php" class="grid-box">
+            <img src="media/index/choc-spatio-temporel.png">
+        </a>
+        <a href="lumiere-triomphale.php" class="grid-box">
+            <img src="media/index/lumiere-triomphale.png">
+        </a>
+        <a href="rejouissances-rayonnantes.php" class="grid-box">
+            <img src="media/index/rejouissances-rayonnantes.png">
+        </a>
+        <a href="promo-a.php" class="grid-box">
+            <img src="media/index/promo-a.png">
+        </a>
+        <a href="echange.php" class="grid-box">
+            <img src="media/index/piece-echange.png">
+        </a>
+        <a href="secondary-accounts.php" class="grid-box">
+            <img src="media/index/binder-collection.png">
+        </a>
+        <!-- Add more boxes as needed -->
+
+        
+    </div>
+</body>
+</html>
