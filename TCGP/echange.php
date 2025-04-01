@@ -1,13 +1,13 @@
 <?php
 // Define the card collections
 $collections = [
-    'puissance-genetique' => [
-        'title' => "Puissance Génétique",
-        'sectionId' => 'section1',
-        'totalCards' => 286,
-        'notGottenCards' => [],
-        'displayCards' => [230, 234, 248] 
-    ],
+    // 'puissance-genetique' => [
+    //     'title' => "Puissance Génétique",
+    //     'sectionId' => 'section1',
+    //     'totalCards' => 286,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ],
     'l-ile-fabuleuse' => [
         'title' => "L'île Fabuleuse",
         'sectionId' => 'section2',
