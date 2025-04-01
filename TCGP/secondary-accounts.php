@@ -7,7 +7,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [23, 36, 36, 47, 47, 76, 76, 84, 84, 84, 104, 146, 153, 227, 228, 228, 229, 231, 231, 231, 233, 236, 236, 241, 245, 248, 249, 249, 272, 273]
+            'displayCards' => [23, 36, 36, 47, 47, 76, 76, 84, 84, 84, 104, 146, 153, 227, 228, 228, 229, 231, 231, 231, 233, 236, 236, 241, 245, 249, 249, 272, 273]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
@@ -21,7 +21,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 7, 67, 110, 156, 158, 159, 159, 160, 164, 171, 172, 173, 176, 191, 204]
+            'displayCards' => [7, 7, 49, 67, 110, 156, 158, 159, 159, 160, 164, 171, 172, 173, 176, 191, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -44,7 +44,7 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [23, 36, 36, 36, 41, 47, 76, 84, 146, 228, 228, 230, 235, 235, 237, 238, 252, 278, 281]
+            'displayCards' => [23, 36, 36, 36, 41, 47, 76, 84, 146, 227, 228, 228, 235, 235, 237, 238, 252, 278, 281]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
@@ -81,21 +81,21 @@ $collections = [
             'sectionId' => 'section1',
             'totalCards' => 286,
             'notGottenCards' => [],
-            'displayCards' => [4, 41, 47, 76, 96, 228, 228, 231, 232, 234, 236, 244, 252, 270, 271, 274, 279, 280, 281]
+            'displayCards' => [4, 41, 47, 76, 96, 228, 228, 231, 232, 236, 244, 252, 270, 271, 274, 279, 280, 281]
         ],
         'l-ile-fabuleuse' => [
             'title' => "L'île Fabuleuse",
             'sectionId' => 'section2',
             'totalCards' => 86,
             'notGottenCards' => [],
-            'displayCards' => [32, 71, 72]
+            'displayCards' => [32, 71, 72, 72]
         ],
         'choc-spatio-temporel' => [
             'title' => 'Choc Spatio-temporel',
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [49, 110, 110, 119, 119, 125, 157, 160, 168, 169, 172, 173, 174, 178, 178, 179, 200]
+            'displayCards' => [49, 110, 110, 119, 119, 125, 157, 158, 160, 168, 169, 172, 173, 174, 178, 178, 179, 200]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
@@ -132,7 +132,7 @@ $collections = [
             'sectionId' => 'section3',
             'totalCards' => 207,
             'notGottenCards' => [],
-            'displayCards' => [7, 119, 164, 168, 171, 173, 175, 176, 178, 186, 203, 204]
+            'displayCards' => [7, 99, 119, 164, 168, 171, 173, 175, 176, 178, 186, 203, 204]
         ],
         'lumiere-triomphale' => [
             'title' => 'Lumière Triomphale',
