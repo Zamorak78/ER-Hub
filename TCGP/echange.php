@@ -33,8 +33,8 @@ $collections = [
         'title' => 'Réjouissances Rayonnantes',
         'sectionId' => 'section5',
         'totalCards' => 111,
-        'notGottenCards' => [],
-        'displayCards' => []
+        'notGottenCards' => [10, 19, 22, 48],
+        'displayCards' => [7, 10, 19, 22, 43, 48, 51, 54, 75]
     ],
     // 'promo-a' => [
     //     'title' => 'Promo-A',
