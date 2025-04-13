@@ -5,7 +5,7 @@ $collections = [
         'title' => 'Promo-A',
         'sectionId' => 'section100',
         'totalCards' => 59,
-        'notGottenCards' => [10, 13, 15, 18, 20, 21, 42, 52, 53, 54, 55, 56, 57, 58, 59]
+        'notGottenCards' => [10, 13, 15, 18, 20, 21, 42, 52, 58, 59]
     ]
 ];
 
