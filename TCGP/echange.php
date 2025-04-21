@@ -29,13 +29,13 @@ $collections = [
     //     'notGottenCards' => [],
     //     'displayCards' => []
     // ],
-    'rejouissances-rayonnantes' => [
-        'title' => 'Réjouissances Rayonnantes',
-        'sectionId' => 'section5',
-        'totalCards' => 111,
-        'notGottenCards' => [48],
-        'displayCards' => [7, 43, 48, 54, 75]
-    ],
+    // 'rejouissances-rayonnantes' => [
+    //     'title' => 'Réjouissances Rayonnantes',
+    //     'sectionId' => 'section5',
+    //     'totalCards' => 111,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ],
     // 'promo-a' => [
     //     'title' => 'Promo-A',
     //     'sectionId' => 'section100',
