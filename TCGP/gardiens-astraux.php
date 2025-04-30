@@ -1,55 +1,12 @@
 <?php
 // Define the card collections
 $collections = [
-    // 'puissance-genetique' => [
-    //     'title' => "Puissance Génétique",
-    //     'sectionId' => 'section1',
-    //     'totalCards' => 286,
-    //     'notGottenCards' => [],
-    //     'displayCards' => []
-    // ],
-    'l-ile-fabuleuse' => [
-        'title' => "L'île Fabuleuse",
-        'sectionId' => 'section2',
-        'totalCards' => 86,
-        'notGottenCards' => [],
-        'displayCards' => [69, 71] 
-    ],
-    'choc-spatio-temporel' => [
-        'title' => 'Choc Spatio-temporel',
-        'sectionId' => 'section3',
-        'totalCards' => 207,
-        'notGottenCards' => [],
-        'displayCards' => [156, 157, 160, 165, 166, 168, 171, 173, ]
-    ],
-    // 'lumiere-triomphale' => [
-    //     'title' => 'Lumière Triomphale',
-    //     'sectionId' => 'section4',
-    //     'totalCards' => 96,
-    //     'notGottenCards' => [],
-    //     'displayCards' => []
-    // ],
-    // 'rejouissances-rayonnantes' => [
-    //     'title' => 'Réjouissances Rayonnantes',
-    //     'sectionId' => 'section5',
-    //     'totalCards' => 111,
-    //     'notGottenCards' => [],
-    //     'displayCards' => []
-    // ],
     'gardiens-astraux' => [
         'title' => 'Gardiens Astraux',
         'sectionId' => 'section6',
         'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => []
-    ],
-    // 'promo-a' => [
-    //     'title' => 'Promo-A',
-    //     'sectionId' => 'section100',
-    //     'totalCards' => 49,
-    //     'notGottenCards' => [],
-    //     'displayCards' => []
-    // ]
+        'notGottenCards' => [4, 8, 12, 16, 20, 22, 24, 30, 33, 37, 41, 43, 47, 49, 50, 51, 60, 68, 70, 76, 78, 80, 81, 82, 84, 87, 92, 94, 95, 96, 100, 101, 107, 111, 112, 122, 123, 124, 132, 139, 140, 141, 143, 145, 156, 157, 158, 159, 160, 161, 163, 164, 165, 166, 167, 168, 169, 170, 172, 173, 174, 175, 176, 178, 179, 180, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 217, 218, 219, 220, 221, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239]
+    ]
 ];
 
 // Function to generate the HTML for a collection
@@ -59,16 +16,19 @@ function generateCollectionHTML($collectionKey, $collection) {
     $html = <<<HTML
     <div class="section-header">
         <h2 class="section-title">{$collection['title']}</h2>
+        <div class="button-group">
+            <button class="toggle-button" onclick="toggleSection('{$collection['sectionId']}')">Masquer</button>
+            <a href="index.html" class="link-button" target="_blank">Acceuil</a>
+        </div>
     </div>
     <div class="card-collection" id="{$collection['sectionId']}">
     HTML;
 
-    // Only generate HTML for the specified cards
-    foreach ($collection['displayCards'] as $cardNumber) {
-        $class = in_array($cardNumber, $collection['notGottenCards']) ? 'card-image-not-gotten' : 'card-image-gotten';
+    for ($i = 1; $i <= $collection['totalCards']; $i++) {
+        $class = in_array($i, $collection['notGottenCards']) ? 'card-image-not-gotten' : 'card-image-gotten';
         $html .= <<<HTML
-        <div class="card" onclick="openModal('{$baseUrl}/{$cardNumber}.webp')">
-            <img src="{$baseUrl}/{$cardNumber}.webp" class="{$class}">
+        <div class="card" onclick="openModal('{$baseUrl}/{$i}.webp')">
+            <img src="{$baseUrl}/{$i}.webp" class="{$class}">
         </div>
         HTML;
     }
@@ -82,13 +42,10 @@ function generateCollectionHTML($collectionKey, $collection) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Echange</title>
+    <title>Gardiens Astraux</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="button-group">
-        <a href="index.html" class="link-button" target="_blank">Acceuil</a>
-    </div>
     <?php
     foreach ($collections as $key => $collection) {
         echo generateCollectionHTML($key, $collection);
