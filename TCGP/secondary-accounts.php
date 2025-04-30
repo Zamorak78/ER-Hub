@@ -36,7 +36,14 @@ $collections = [
             'totalCards' => 111,
             'notGottenCards' => [],
             'displayCards' => [54]
-        ]
+        ],
+        'gardiens-astraux' => [
+        'title' => 'Gardiens Astraux',
+        'sectionId' => 'section6',
+        'totalCards' => 239,
+        'notGottenCards' => [],
+        'displayCards' => []
+        ],
     ],
     'rsqake2' => [
         'puissance-genetique' => [
@@ -73,7 +80,14 @@ $collections = [
             'totalCards' => 111,
             'notGottenCards' => [],
             'displayCards' => [43, 75]
-        ]
+        ],
+        'gardiens-astraux' => [
+        'title' => 'Gardiens Astraux',
+        'sectionId' => 'section6',
+        'totalCards' => 239,
+        'notGottenCards' => [],
+        'displayCards' => [210]
+        ],
     ],
     'rsqake3' => [
         'puissance-genetique' => [
@@ -110,7 +124,14 @@ $collections = [
             'totalCards' => 111,
             'notGottenCards' => [],
             'displayCards' => [54, 78]
-        ]
+        ],
+        'gardiens-astraux' => [
+        'title' => 'Gardiens Astraux',
+        'sectionId' => 'section6',
+        'totalCards' => 239,
+        'notGottenCards' => [],
+        'displayCards' => [58]
+        ],
     ],
     'rsqake4' => [
         'puissance-genetique' => [
@@ -147,7 +168,14 @@ $collections = [
             'totalCards' => 111,
             'notGottenCards' => [],
             'displayCards' => []
-        ]
+        ],
+        'gardiens-astraux' => [
+        'title' => 'Gardiens Astraux',
+        'sectionId' => 'section6',
+        'totalCards' => 239,
+        'notGottenCards' => [],
+        'displayCards' => []
+        ],
     ],
     'rsqake5' => [
         'puissance-genetique' => [
@@ -184,7 +212,14 @@ $collections = [
             'totalCards' => 111,
             'notGottenCards' => [],
             'displayCards' => [76, 96]
-        ]
+        ],
+        'gardiens-astraux' => [
+        'title' => 'Gardiens Astraux',
+        'sectionId' => 'section6',
+        'totalCards' => 239,
+        'notGottenCards' => [],
+        'displayCards' => []
+        ],
     ]
 ];
 
