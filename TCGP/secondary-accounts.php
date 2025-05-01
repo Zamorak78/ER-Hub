@@ -42,7 +42,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => []
+        'displayCards' => [167]
         ],
     ],
     'rsqake2' => [
@@ -86,7 +86,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => [210]
+        'displayCards' => [58, 175, 175, 175, 210, 237]
         ],
     ],
     'rsqake3' => [
@@ -130,7 +130,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => [58]
+        'displayCards' => [58, 178, 184, 184, 215, 236]
         ],
     ],
     'rsqake4' => [
@@ -174,7 +174,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => []
+        'displayCards' => [12, 161, 162, 163, 171, 174, 174, 234]
         ],
     ],
     'rsqake5' => [
@@ -218,7 +218,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => []
+        'displayCards' => [12, 51, 156, 163, 176, 198, 208, 214, 231, 232]
         ],
     ]
 ];
