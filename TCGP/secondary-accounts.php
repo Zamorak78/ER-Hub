@@ -38,11 +38,11 @@ $collections = [
             'displayCards' => [54]
         ],
         'gardiens-astraux' => [
-        'title' => 'Gardiens Astraux',
-        'sectionId' => 'section6',
-        'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => [167]
+            'title' => 'Gardiens Astraux',
+            'sectionId' => 'section6',
+            'totalCards' => 239,
+            'notGottenCards' => [],
+            'displayCards' => [33, 167]
         ],
     ],
     'rsqake2' => [
@@ -82,11 +82,11 @@ $collections = [
             'displayCards' => [43, 75]
         ],
         'gardiens-astraux' => [
-        'title' => 'Gardiens Astraux',
-        'sectionId' => 'section6',
-        'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => [58, 175, 175, 175, 210, 237]
+            'title' => 'Gardiens Astraux',
+            'sectionId' => 'section6',
+            'totalCards' => 239,
+            'notGottenCards' => [],
+            'displayCards' => [58, 175, 175, 175, 210, 237]
         ],
     ],
     'rsqake3' => [
@@ -126,11 +126,11 @@ $collections = [
             'displayCards' => [54, 78]
         ],
         'gardiens-astraux' => [
-        'title' => 'Gardiens Astraux',
-        'sectionId' => 'section6',
-        'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => [58, 178, 184, 184, 215, 236]
+            'title' => 'Gardiens Astraux',
+            'sectionId' => 'section6',
+            'totalCards' => 239,
+            'notGottenCards' => [],
+            'displayCards' => [58, 162, 174, 177, 178, 178, 179, 184, 184, 215, 234, 236]
         ],
     ],
     'rsqake4' => [
@@ -170,11 +170,11 @@ $collections = [
             'displayCards' => []
         ],
         'gardiens-astraux' => [
-        'title' => 'Gardiens Astraux',
-        'sectionId' => 'section6',
-        'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => [12, 161, 162, 163, 171, 174, 174, 234]
+            'title' => 'Gardiens Astraux',
+            'sectionId' => 'section6',
+            'totalCards' => 239,
+            'notGottenCards' => [],
+            'displayCards' => [12, 161, 162, 163, 171, 174, 174, 208, 234]
         ],
     ],
     'rsqake5' => [
@@ -214,11 +214,11 @@ $collections = [
             'displayCards' => [76, 96]
         ],
         'gardiens-astraux' => [
-        'title' => 'Gardiens Astraux',
-        'sectionId' => 'section6',
-        'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => [12, 51, 156, 163, 176, 198, 208, 214, 231, 232]
+            'title' => 'Gardiens Astraux',
+            'sectionId' => 'section6',
+            'totalCards' => 239,
+            'notGottenCards' => [],
+            'displayCards' => [12, 51, 156, 163, 164, 176, 198, 208, 214, 231, 232]
         ],
     ]
 ];
