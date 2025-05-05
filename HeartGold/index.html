@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeartGold - Pokedex National</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      width: 90%;
+      max-width: 1200px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    .image-grid img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .image-grid img.not_gotten{
+      filter: grayscale(100%);
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-grid">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bulbasaur.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ivysaur.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/venusaur.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/charmander.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/charmeleon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/charizard.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/squirtle.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wartortle.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/blastoise.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/caterpie.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/metapod.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/butterfree.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/weedle.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kakuna.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/beedrill.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pidgey.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pidgeotto.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pidgeot.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rattata.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/raticate.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/spearow.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/fearow.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ekans.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/arbok.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pikachu.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/raichu.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sandshrew.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sandslash.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nidoran-f.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nidorina.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nidoqueen.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nidoran-m.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nidorino.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nidoking.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/clefairy.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/clefable.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/vulpix.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ninetales.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/jigglypuff.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wigglytuff.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/zubat.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/golbat.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/oddish.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gloom.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/vileplume.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/paras.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/parasect.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/venonat.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/venomoth.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/diglett.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dugtrio.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/meowth.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/persian.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/psyduck.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/golduck.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mankey.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/primeape.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/growlithe.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/arcanine.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/poliwag.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/poliwhirl.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/poliwrath.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/abra.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kadabra.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/alakazam.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/machop.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/machoke.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/machamp.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bellsprout.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/weepinbell.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/victreebel.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tentacool.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tentacruel.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/geodude.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/graveler.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/golem.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ponyta.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rapidash.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/slowpoke.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/slowbro.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magnemite.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magneton.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/farfetchd.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/doduo.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dodrio.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/seel.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dewgong.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/grimer.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/muk.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shellder.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cloyster.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gastly.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/haunter.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gengar.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/onix.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/drowzee.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hypno.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/krabby.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kingler.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/voltorb.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/electrode.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/exeggcute.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/exeggutor.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cubone.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/marowak.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hitmonlee.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hitmonchan.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lickitung.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/koffing.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/weezing.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rhyhorn.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rhydon.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chansey.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tangela.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kangaskhan.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/horsea.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/seadra.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/goldeen.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/seaking.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/staryu.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/starmie.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mr-mime.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/scyther.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/jynx.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/electabuzz.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magmar.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pinsir.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tauros.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magikarp.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gyarados.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lapras.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ditto.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/eevee.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/vaporeon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/jolteon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/flareon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/porygon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/omanyte.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/omastar.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kabuto.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kabutops.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/aerodactyl.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/snorlax.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/articuno.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/zapdos.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/moltres.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dratini.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dragonair.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dragonite.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mewtwo.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mew.jpg" class="not_gotten" loading="lazy">
+
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chikorita.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bayleef.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/meganium.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cyndaquil.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/quilava.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/typhlosion.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/totodile.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/croconaw.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/feraligatr.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sentret.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/furret.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hoothoot.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/noctowl.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ledyba.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ledian.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/spinarak.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ariados.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/crobat.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chinchou.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lanturn.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pichu.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cleffa.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/igglybuff.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/togepi.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/togetic.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/natu.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/xatu.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mareep.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/flaaffy.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ampharos.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bellossom.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/marill.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/azumarill.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sudowoodo.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/politoed.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hoppip.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/skiploom.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/jumpluff.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/aipom.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sunkern.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sunflora.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/yanma.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wooper.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/quagsire.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/espeon.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/umbreon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/murkrow.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/slowking.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/misdreavus.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/unown.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wobbuffet.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/girafarig.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pineco.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/forretress.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dunsparce.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gligar.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/steelix.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/snubbull.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/granbull.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/qwilfish.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/scizor.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shuckle.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/heracross.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sneasel.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/teddiursa.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ursaring.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/slugma.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magcargo.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/swinub.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/piloswine.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/corsola.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/remoraid.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/octillery.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/delibird.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mantine.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/skarmory.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/houndour.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/houndoom.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kingdra.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/phanpy.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/donphan.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/porygon2.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/stantler.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/smeargle.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tyrogue.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hitmontop.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/smoochum.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/elekid.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magby.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/miltank.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/blissey.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/raikou.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/entei.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/suicune.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/larvitar.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pupitar.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tyranitar.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lugia.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ho-oh.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/celebi.jpg" class="not_gotten" loading="lazy">
+
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/treecko.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/grovyle.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sceptile.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/torchic.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/combusken.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/blaziken.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mudkip.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/marshtomp.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/swampert.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/poochyena.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mightyena.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/zigzagoon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/linoone.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wurmple.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/silcoon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/beautifly.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cascoon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dustox.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lotad.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lombre.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ludicolo.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/seedot.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nuzleaf.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shiftry.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/taillow.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/swellow.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wingull.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pelipper.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ralts.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kirlia.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gardevoir.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/surskit.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/masquerain.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shroomish.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/breloom.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/slakoth.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/vigoroth.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/slaking.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nincada.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ninjask.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shedinja.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/whismur.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/loudred.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/exploud.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/makuhita.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hariyama.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/azurill.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/nosepass.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/skitty.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/delcatty.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sableye.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mawile.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/aron.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lairon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/aggron.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/meditite.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/medicham.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/electrike.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/manectric.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/plusle.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/minun.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/volbeat.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/illumise.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/roselia.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gulpin.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/swalot.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/carvanha.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sharpedo.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wailmer.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wailord.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/numel.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/camerupt.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/torkoal.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/spoink.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/grumpig.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/spinda.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/trapinch.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/vibrava.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/flygon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cacnea.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cacturne.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/swablu.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/altaria.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/zangoose.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/seviper.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lunatone.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/solrock.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/barboach.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/whiscash.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/corphish.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/crawdaunt.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/baltoy.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/claydol.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lileep.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cradily.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/anorith.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/armaldo.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/feebas.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/milotic.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/castform.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kecleon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shuppet.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/banette.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/duskull.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dusclops.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tropius.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chimecho.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/absol.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wynaut.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/snorunt.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/glalie.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/spheal.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/sealeo.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/walrein.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/clamperl.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/huntail.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gorebyss.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/relicanth.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/luvdisc.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bagon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shelgon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/salamence.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/beldum.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/metang.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/metagross.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/regirock.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/regice.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/registeel.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/latias.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/latios.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kyogre.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/groudon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rayquaza.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/jirachi.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/deoxys.jpg" class="not_gotten" loading="lazy">
+
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/turtwig.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/grotle.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/torterra.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chimchar.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/monferno.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/infernape.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/piplup.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/prinplup.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/empoleon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/starly.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/staravia.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/staraptor.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bidoof.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bibarel.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kricketot.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/kricketune.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shinx.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/luxio.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/luxray.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/budew.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/roserade.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cranidos.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rampardos.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shieldon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bastiodon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/burmy.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/wormadam.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mothim.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/combee.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/vespiquen.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/pachirisu.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/buizel.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/floatzel.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cherubi.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cherrim.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shellos.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gastrodon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/ambipom.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/drifloon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/drifblim.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/buneary.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lopunny.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mismagius.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/honchkrow.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/glameow.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/purugly.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chingling.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/stunky.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/skuntank.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bronzor.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bronzong.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/bonsly.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mime-jr.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/happiny.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/chatot.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/spiritomb.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gible.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gabite.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/garchomp.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/munchlax.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/riolu.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lucario.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hippopotas.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/hippowdon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/skorupi.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/drapion.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/croagunk.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/toxicroak.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/carnivine.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/finneon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lumineon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mantyke.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/snover.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/abomasnow.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/weavile.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magnezone.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/lickilicky.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rhyperior.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/tangrowth.jpg" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/electivire.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/magmortar.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/togekiss.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/yanmega.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/leafeon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/glaceon.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gliscor.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mamoswine.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/porygon-z.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/gallade.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/probopass.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dusknoir.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/froslass.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/rotom.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/uxie.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/mesprit.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/azelf.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/dialga.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/palkia.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/heatran.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/regigigas.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/giratina.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/cresselia.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/phione.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/manaphy.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/darkrai.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/shaymin.jpg" class="not_gotten" loading="lazy">
+    <img src="https://img.pokemondb.net/sprites/home/normal/2x/arceus.jpg" class="not_gotten" loading="lazy">
+  </div>
+</body>
+</html>
