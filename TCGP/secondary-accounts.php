@@ -86,7 +86,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [58, 175, 175, 175, 210, 237]
+            'displayCards' => [58, 175, 175, 175, 210, 237, 238]
         ],
     ],
     'rsqake3' => [
@@ -218,7 +218,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [12, 51, 156, 163, 164, 176, 198, 208, 214, 231, 232]
+            'displayCards' => [12, 51, 156, 163, 164, 176, 198, 203, 208, 214, 231, 232]
         ],
     ]
 ];
