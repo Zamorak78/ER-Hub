@@ -1,7 +1,7 @@
 <?php
 // Define the card collections
 $collections = [
-    's20' => [
+    'Zamorak II - s20' => [
         'puissance-genetique' => [
             'title' => "Puissance Génétique",
             'sectionId' => 'section1',
@@ -42,7 +42,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [33, 167]
+            'displayCards' => [33, 167, 173, 211, 237]
         ],
     ],
     'rsqake2' => [
