@@ -45,7 +45,7 @@ $collections = [
             'displayCards' => [33, 167, 173, 211, 237]
         ],
     ],
-    'rsqake2' => [
+    'Zamorak III - rsqake2' => [
         'puissance-genetique' => [
             'title' => "Puissance Génétique",
             'sectionId' => 'section1',
@@ -86,10 +86,10 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [58, 122, 158, 175, 175, 175, 210, 237, 238]
+            'displayCards' => [58, 122, 158, 159, 175, 175, 175, 210, 237, 238]
         ],
     ],
-    'rsqake3' => [
+    'Zamorak IV - rsqake3' => [
         'puissance-genetique' => [
             'title' => "Puissance Génétique",
             'sectionId' => 'section1',
@@ -133,7 +133,7 @@ $collections = [
             'displayCards' => [58, 162, 174, 177, 178, 178, 179, 184, 184, 215, 234, 236]
         ],
     ],
-    'rsqake4' => [
+    'Zamorak V - rsqake4' => [
         'puissance-genetique' => [
             'title' => "Puissance Génétique",
             'sectionId' => 'section1',
@@ -174,10 +174,10 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [12, 104, 161, 162, 163, 168, 171, 174, 174, 208, 234]
+            'displayCards' => [12, 104, 111, 161, 162, 163, 168, 171, 174, 174, 193, 208, 234]
         ],
     ],
-    'rsqake5' => [
+    'Zamorak VI - rsqake5' => [
         'puissance-genetique' => [
             'title' => "Puissance Génétique",
             'sectionId' => 'section1',
