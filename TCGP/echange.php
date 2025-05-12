@@ -8,13 +8,13 @@ $collections = [
     //     'notGottenCards' => [],
     //     'displayCards' => []
     // ],
-    'l-ile-fabuleuse' => [
-        'title' => "L'île Fabuleuse",
-        'sectionId' => 'section2',
-        'totalCards' => 86,
-        'notGottenCards' => [],
-        'displayCards' => [69, 71] 
-    ],
+    // 'l-ile-fabuleuse' => [
+    //     'title' => "L'île Fabuleuse",
+    //     'sectionId' => 'section2',
+    //     'totalCards' => 86,
+    //     'notGottenCards' => [],
+    //     'displayCards' => [] 
+    // ],
     'choc-spatio-temporel' => [
         'title' => 'Choc Spatio-temporel',
         'sectionId' => 'section3',

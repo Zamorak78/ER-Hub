@@ -6,7 +6,7 @@ $collections = [
         'sectionId' => 'section2',
         'totalCards' => 86,
         // Array of card numbers that are not gotten (all others are considered gotten)
-        'notGottenCards' => [69, 71, 75, 76, 78, 79, 80, 81, 83, 84, 86]
+        'notGottenCards' => [75, 76, 78, 79, 80, 81, 83, 84, 86]
     ]
 ];
 
