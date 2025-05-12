@@ -87,7 +87,7 @@ function generateCollectionHTML($collectionKey, $collection) {
 </head>
 <body>
     <div class="button-group">
-        <a href="index.html" class="link-button" target="_blank">Acceuil</a>
+        <a href="index.html" class="link-button">Acceuil</a>
     </div>
     <?php
     foreach ($collections as $key => $collection) {

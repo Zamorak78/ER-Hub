@@ -19,7 +19,7 @@ function generateCollectionHTML($collectionKey, $collection) {
         <h2 class="section-title">{$collection['title']}</h2>
         <div class="button-group">
             <button class="toggle-button" onclick="toggleSection('{$collection['sectionId']}')">Masquer</button>
-            <a href="index.html" class="link-button" target="_blank">Acceuil</a>
+            <a href="index.html" class="link-button">Acceuil</a>
         </div>
     </div>
     <div class="card-collection" id="{$collection['sectionId']}">
