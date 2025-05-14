@@ -40,8 +40,8 @@ $collections = [
         'title' => 'Gardiens Astraux',
         'sectionId' => 'section6',
         'totalCards' => 239,
-        'notGottenCards' => [157, 170],
-        'displayCards' => [156, 157, 158, 159, 160, 161, 163, 164, 166, 168, 170, 173, 174, 178, 179]
+        'notGottenCards' => [157],
+        'displayCards' => [156, 157, 158, 159, 160, 161, 163, 164, 166, 168, 173, 174, 178, 179]
     ],
     // 'promo-a' => [
     //     'title' => 'Promo-A',
