@@ -174,7 +174,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [12, 104, 111, 161, 162, 163, 168, 171, 174, 174, 193, 208, 234]
+            'displayCards' => [12, 104, 111, 161, 162, 163, 168, 171, 172, 174, 174, 193, 208, 234]
         ],
     ],
     'Zamorak VI - rsqake5' => [
@@ -218,7 +218,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [12, 51, 156, 163, 164, 176, 198, 203, 208, 214, 231, 232, 236]
+            'displayCards' => [12, 33, 51, 156, 163, 164, 176, 198, 203, 208, 214, 227, 231, 232, 236]
         ],
     ]
 ];
