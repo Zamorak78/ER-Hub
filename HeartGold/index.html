@@ -535,5 +535,36 @@
     <img alt="shaymin"      class="not_gotten"  src="https://img.pokemondb.net/sprites/home/normal/2x/shaymin.jpg" loading="lazy">
     <img alt="arceus"       class="not_gotten"  src="https://img.pokemondb.net/sprites/home/normal/2x/arceus.jpg" loading="lazy">
   </div>
+
+  <!-- Add this just before </body> -->
+<script>
+  // Create a tooltip div
+  const tooltip = document.createElement('div');
+  tooltip.style.position = 'fixed';
+  tooltip.style.background = 'rgba(0,0,0,0.85)';
+  tooltip.style.color = '#fff';
+  tooltip.style.padding = '4px 10px';
+  tooltip.style.borderRadius = '5px';
+  tooltip.style.pointerEvents = 'none';
+  tooltip.style.fontSize = '1em';
+  tooltip.style.zIndex = 1000;
+  tooltip.style.display = 'none';
+  document.body.appendChild(tooltip);
+
+  document.querySelectorAll('.image-grid img').forEach(img => {
+    img.addEventListener('mouseenter', e => {
+      tooltip.textContent = img.alt;
+      tooltip.style.display = 'block';
+    });
+    img.addEventListener('mousemove', e => {
+      tooltip.style.left = (e.clientX + 15) + 'px';
+      tooltip.style.top = (e.clientY + 10) + 'px';
+    });
+    img.addEventListener('mouseleave', e => {
+      tooltip.style.display = 'none';
+    });
+  });
+</script>
+
 </body>
 </html>
