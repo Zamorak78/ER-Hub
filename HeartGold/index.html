@@ -8,10 +8,6 @@
     body {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
       background-color: #f4f4f4;
     }
     .image-grid {
@@ -20,8 +16,7 @@
       gap: 10px;
       width: 90%;
       max-width: 1200px;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin: 30px auto 30px auto;
     }
     .image-grid img {
       width: 100%;
@@ -37,6 +32,9 @@
   </style>
 </head>
 <body>
+  <div style="width: 100%; display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <div id="gotten-count" style="font-size: 1.5em; font-weight: bold; text-align: center;"></div>
+  </div>
   <div class="image-grid">
     <img alt="bulbizarre"                       src="https://img.pokemondb.net/sprites/home/normal/2x/bulbasaur.jpg" loading="lazy">
     <img alt="herbizarre"                       src="https://img.pokemondb.net/sprites/home/normal/2x/ivysaur.jpg" loading="lazy">
@@ -536,9 +534,13 @@
     <img alt="arceus"       class="not_gotten"  src="https://img.pokemondb.net/sprites/home/normal/2x/arceus.jpg" loading="lazy">
   </div>
 
-  <!-- Add this just before </body> -->
 <script>
-  // Create a tooltip div
+  window.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('.image-grid img');
+    const gotten = Array.from(images).filter(img => !img.classList.contains('not_gotten')).length;
+    document.getElementById('gotten-count').textContent = `${gotten} / 493`;
+  });
+  
   const tooltip = document.createElement('div');
   tooltip.style.position = 'fixed';
   tooltip.style.background = 'rgba(0,0,0,0.85)';
