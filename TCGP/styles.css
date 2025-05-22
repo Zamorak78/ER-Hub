@@ -61,6 +61,7 @@ body {
 
 .card-image-not-gotten:hover {
     filter: grayscale(0%);
+    opacity: 0.8;
 }
 
 .section-header {
