@@ -42,7 +42,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [33, 104, 167, 167, 173, 186, 211, 237]
+            'displayCards' => [33, 104, 167, 167, 171, 173, 186, 211, 237]
         ],
     ],
     'Zamorak III - rsqake2' => [
