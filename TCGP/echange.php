@@ -43,6 +43,13 @@ $collections = [
         'notGottenCards' => [49],
         'displayCards' => [12, 20, 22, 24, 33, 41, 49, 68, 87, 112, 143, 156, 158, 161, 163, 164, 166, 168, 173, 174, 178, 179]
     ],
+    'crise-interdimensionnelle' => [
+        'title' => 'Crise Interdimensionnelle',
+        'sectionId' => 'section7',
+        'totalCards' => 103,
+        'notGottenCards' => [71, 74],
+        'displayCards' => [71, 74]
+    ],
     // 'promo-a' => [
     //     'title' => 'Promo-A',
     //     'sectionId' => 'section100',
