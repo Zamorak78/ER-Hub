@@ -93,7 +93,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [58, 87, 122, 122, 122, 158, 159, 160, 166, 168, 175, 175, 175, 183, 210, 219, 237, 238]
+            'displayCards' => [58, 87, 122, 122, 122, 158, 159, 160, 166, 168, 175, 175, 175, 183, 210, 219, 225, 237, 238]
         ],
         'crise-interdimensionnelle' => [
             'title' => 'Crise Interdimensionnelle',
@@ -202,7 +202,7 @@ $collections = [
             'sectionId' => 'section7',
             'totalCards' => 103,
             'notGottenCards' => [],
-            'displayCards' => []
+            'displayCards' => [71]
         ],
     ],
     'Zamorak VI - rsqake5' => [
@@ -246,7 +246,7 @@ $collections = [
             'sectionId' => 'section6',
             'totalCards' => 239,
             'notGottenCards' => [],
-            'displayCards' => [12, 33, 51, 58, 104, 156, 163, 164, 176, 177, 185, 189, 198, 201, 203, 207, 208, 214, 227, 231, 232, 236]
+            'displayCards' => [12, 33, 51, 58, 58, 104, 156, 163, 164, 176, 177, 185, 189, 198, 201, 203, 207, 208, 214, 227, 231, 232, 236]
         ],
         'crise-interdimensionnelle' => [
             'title' => 'Crise Interdimensionnelle',

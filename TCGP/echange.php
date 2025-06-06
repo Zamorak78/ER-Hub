@@ -47,7 +47,7 @@ $collections = [
         'title' => 'Crise Interdimensionnelle',
         'sectionId' => 'section7',
         'totalCards' => 103,
-        'notGottenCards' => [71, 74],
+        'notGottenCards' => [74],
         'displayCards' => [71, 74]
     ],
     // 'promo-a' => [
