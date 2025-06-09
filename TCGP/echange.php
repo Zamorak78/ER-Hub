@@ -41,7 +41,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => [12, 20, 22, 24, 33, 41, 49, 68, 112, 143, 156, 158, 161, 163, 164, 166, 168, 173, 174, 178, 179]
+        'displayCards' => [12, 20, 22, 24, 33, 41, 49, 68, 112, 143, 156, 158, 161, 163, 164, 166, 168, 173, 178, 179]
     ],
     // 'crise-interdimensionnelle' => [
     //     'title' => 'Crise Interdimensionnelle',
