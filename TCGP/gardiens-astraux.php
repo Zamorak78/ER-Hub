@@ -11,7 +11,7 @@ $collections = [
 
 // Function to generate the HTML for a collection
 function generateCollectionHTML($collectionKey, $collection) {
-    $baseUrl = "media/{$collectionKey}";
+    $baseUrl = "https://image.pokemonpocket.fr/{$collectionKey}";
     
     $html = <<<HTML
     <div class="section-header">
