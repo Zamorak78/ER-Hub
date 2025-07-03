@@ -4,7 +4,7 @@ $collections = [
     'Zamorak II - s20' => [
         'puissance-genetique' => [
             'sectionId' => 'section1',
-            'displayCards' => [23, 36, 36, 47, 47, 51, 76, 76, 84, 84, 84, 104, 146, 153, 227, 228, 228, 229, 231, 231, 231, 233, 236, 236, 241, 245, 249, 249, 272, 273]
+            'displayCards' => [23, 36, 36, 47, 47, 76, 76, 84, 84, 84, 104, 146, 153, 227, 228, 228, 229, 231, 231, 231, 233, 236, 236, 241, 245, 249, 249, 272, 273]
         ],
         'l-ile-fabuleuse' => [
             'sectionId' => 'section2',
@@ -32,7 +32,7 @@ $collections = [
         ],
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
-            'displayCards' => []
+            'displayCards' => [76]
         ],
     ],
     'Zamorak III - rsqake2' => [
