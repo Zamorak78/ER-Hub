@@ -51,6 +51,10 @@ $collections = [
             'notGottenCards' => [],
             'displayCards' => []
         ],
+        'la-clairiere-d-evoli' => [
+            'sectionId' => 'section8',
+            'displayCards' => [1, 2, 3, 4, 5]
+        ],
     ],
     'Zamorak III - rsqake2' => [
         'puissance-genetique' => [
