@@ -32,7 +32,7 @@ $collections = [
         ],
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
-            'displayCards' => [76]
+            'displayCards' => [76, 78]
         ],
     ],
     'Zamorak III - rsqake2' => [
@@ -66,7 +66,7 @@ $collections = [
         ],
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
-            'displayCards' => []
+            'displayCards' => [24, 92]
         ],
     ],
     'Zamorak IV - rsqake3' => [
@@ -100,7 +100,7 @@ $collections = [
         ],
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
-            'displayCards' => []
+            'displayCards' => [96, 104]
         ],
     ],
     'Zamorak V - rsqake4' => [
