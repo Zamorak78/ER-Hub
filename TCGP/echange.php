@@ -54,8 +54,8 @@ $collections = [
         'title' => 'La Clairière d\'Évoli',
         'sectionId' => 'section7',
         'totalCards' => 107,
-        'notGottenCards' => [74],
-        'displayCards' => [24, 35, 74, 76]
+        'notGottenCards' => [],
+        'displayCards' => [24, 35, 76]
     ]
     // 'promo-a' => [
     //     'title' => 'Promo-A',
