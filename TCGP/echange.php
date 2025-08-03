@@ -50,13 +50,13 @@ $collections = [
     //     'notGottenCards' => [],
     //     'displayCards' => []
     // ],
-    'la-clairiere-d-evoli' => [
-        'title' => 'La Clairière d\'Évoli',
-        'sectionId' => 'section7',
-        'totalCards' => 107,
-        'notGottenCards' => [],
-        'displayCards' => [24, 35]
-    ]
+    // 'la-clairiere-d-evoli' => [
+    //     'title' => 'La Clairière d\'Évoli',
+    //     'sectionId' => 'section7',
+    //     'totalCards' => 107,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ]
     // 'promo-a' => [
     //     'title' => 'Promo-A',
     //     'sectionId' => 'section100',
