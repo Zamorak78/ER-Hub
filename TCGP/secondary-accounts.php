@@ -34,6 +34,10 @@ $collections = [
             'sectionId' => 'section8',
             'displayCards' => [76, 78]
         ],
+        'sagesse-entre-ciel-et-mer' => [
+            'sectionId' => 'section9',
+            'displayCards' => []
+        ],
     ],
     'Zamorak III - rsqake2' => [
         'puissance-genetique' => [
@@ -67,6 +71,10 @@ $collections = [
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
             'displayCards' => [24, 24, 92]
+        ],
+        'sagesse-entre-ciel-et-mer' => [
+            'sectionId' => 'section9',
+            'displayCards' => []
         ],
     ],
     'Zamorak IV - rsqake3' => [
@@ -102,6 +110,10 @@ $collections = [
             'sectionId' => 'section8',
             'displayCards' => [70, 96, 104]
         ],
+        'sagesse-entre-ciel-et-mer' => [
+            'sectionId' => 'section9',
+            'displayCards' => [172]
+        ],
     ],
     'Zamorak V - rsqake4' => [
         'puissance-genetique' => [
@@ -136,6 +148,10 @@ $collections = [
             'sectionId' => 'section8',
             'displayCards' => []
         ],
+        'sagesse-entre-ciel-et-mer' => [
+            'sectionId' => 'section9',
+            'displayCards' => [203]
+        ],
     ],
     'Zamorak VI - rsqake5' => [
         'puissance-genetique' => [
@@ -169,6 +185,10 @@ $collections = [
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
             'displayCards' => [72, 76]
+        ],
+        'sagesse-entre-ciel-et-mer' => [
+            'sectionId' => 'section9',
+            'displayCards' => []
         ],
     ]
 ];
