@@ -20,7 +20,7 @@ $collections = [
         'sectionId' => 'section3',
         'totalCards' => 207,
         'notGottenCards' => [],
-        'displayCards' => [157, 160, 165, 166, 168, 171, 173, ]
+        'displayCards' => [157, 160, 165, 166, 168, 171, 173]
     ],
     // 'lumiere-triomphale' => [
     //     'title' => 'Lumière Triomphale',
@@ -41,7 +41,7 @@ $collections = [
         'sectionId' => 'section6',
         'totalCards' => 239,
         'notGottenCards' => [],
-        'displayCards' => [20, 22, 24, 41, 49, 112, 143, 156, 158, 161, 163, 166, 178, 179]
+        'displayCards' => [22, 24, 41, 49, 112, 156, 158, 161, 163, 166, 178, 179]
     ],
     // 'crise-interdimensionnelle' => [
     //     'title' => 'Crise Interdimensionnelle',

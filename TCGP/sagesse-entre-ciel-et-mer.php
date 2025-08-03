@@ -1,11 +1,11 @@
 <?php
 // Define the card collections
 $collections = [
-    'la-clairiere-d-evoli' => [
-        'title' => 'La Clairière d\'Évoli',
-        'sectionId' => 'section8',
-        'totalCards' => 107,
-        'notGottenCards' => [79, 80, 81, 83, 84, 85, 86, 87, 89, 90, 91, 94, 95, 96, 97, 98, 99, 100, 101, 102, 104, 106, 107]
+    'sagesse-entre-ciel-et-mer' => [
+        'title' => 'Sagesse entre Ciel et Mer',
+        'sectionId' => 'section9',
+        'totalCards' => 241,
+        'notGottenCards' => [1, 3, 4, 5, 7, 8, 10, 12, 15, 19, 22, 26, 29, 33, 34, 38, 40, 42, 43, 44, 45, 48, 51, 55, 56, 58, 59, 60, 61, 62, 64, 66, 68, 69, 70, 71, 73, 74, 77, 80, 82, 83, 84, 85, 98, 100, 104, 106, 110, 112, 113, 114, 116, 122, 123, 128, 133, 137, 146, 147, 148, 159, 162, 163, 165, 166,, 167, 168, 169, 170, 171, 172, 174, 175, 178, 179, 180, 181, 183, 184, 186, 187, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 240, 241]
     ]
 ];
 
@@ -42,7 +42,7 @@ function generateCollectionHTML($collectionKey, $collection) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>La Clairière d'Évoli</title>
+    <title>Sagesse entre Ciel et Mer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
