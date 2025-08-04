@@ -176,7 +176,7 @@ $collections = [
         ],
         'gardiens-astraux' => [
             'sectionId' => 'section6',
-            'displayCards' => [12, 33, 49, 51, 58, 58, 104, 156, 163, 164, 176, 177, 185, 189, 198, 201, 203, 207, 208, 214, 227, 231, 232, 236]
+            'displayCards' => [12, 33, 51, 58, 58, 104, 156, 163, 164, 176, 177, 185, 189, 198, 201, 203, 207, 208, 214, 227, 231, 232, 236]
         ],
         'crise-interdimensionnelle' => [
             'sectionId' => 'section7',
