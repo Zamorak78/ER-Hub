@@ -108,7 +108,7 @@ $collections = [
         ],
         'la-clairiere-d-evoli' => [
             'sectionId' => 'section8',
-            'displayCards' => [70, 96, 104]
+            'displayCards' => [57, 70, 96, 104]
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',

@@ -52,11 +52,18 @@ $collections = [
     // ],
     // 'la-clairiere-d-evoli' => [
     //     'title' => 'La Clairière d\'Évoli',
-    //     'sectionId' => 'section7',
+    //     'sectionId' => 'section8',
     //     'totalCards' => 107,
     //     'notGottenCards' => [],
     //     'displayCards' => []
     // ]
+    'sagesse-entre-ciel-et-mer' => [
+        'title' => 'Sagesse entre Ciel et Mer',
+        'sectionId' => 'section9',
+        'totalCards' => 241,
+        'notGottenCards' => [162, 163, 165, 166, 167, 168, 169, 170, 175, 179, 180, 181, 183, 184],
+        'displayCards' => [162, 163, 165, 166, 167, 168, 169, 170, 172, 175, 178, 179, 180, 181, 183, 184]
+    ]
     // 'promo-a' => [
     //     'title' => 'Promo-A',
     //     'sectionId' => 'section100',
