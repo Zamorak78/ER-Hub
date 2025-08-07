@@ -61,7 +61,7 @@ $collections = [
         'title' => 'Sagesse entre Ciel et Mer',
         'sectionId' => 'section9',
         'totalCards' => 241,
-        'notGottenCards' => [34, 112, 162, 163, 166, 167, 169, 170, 175, 179, 180, 181, 183, 184],
+        'notGottenCards' => [34, 112, 163, 166, 167, 170, 175, 179, 180, 181, 183, 184],
         'displayCards' => [34, 83, 112, 162, 163, 166, 167, 169, 170, 172, 175, 178, 179, 180, 181, 183, 184]
     ]
     // 'promo-a' => [

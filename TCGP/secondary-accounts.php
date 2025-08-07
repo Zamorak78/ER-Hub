@@ -36,7 +36,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [220]
+            'displayCards' => [83, 176, 220]
         ],
     ],
     'Zamorak III - rsqake2' => [
@@ -74,7 +74,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => []
+            'displayCards' => [100]
         ],
     ],
     'Zamorak IV - rsqake3' => [
@@ -112,7 +112,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [172]
+            'displayCards' => [169, 172, 174]
         ],
     ],
     'Zamorak V - rsqake4' => [
@@ -150,7 +150,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [178, 199, 203, 238]
+            'displayCards' => [65, 178, 199, 203, 238]
         ],
     ],
     'Zamorak VI - rsqake5' => [
@@ -188,7 +188,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [65]
+            'displayCards' => [65, 162]
         ],
     ]
 ];
