@@ -188,7 +188,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [65, 162, 188]
+            'displayCards' => [65, 162, 183, 188]
         ],
     ]
 ];
