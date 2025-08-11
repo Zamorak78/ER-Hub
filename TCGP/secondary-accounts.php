@@ -36,7 +36,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [83, 166, 170, 176, 179, 220, 220]
+            'displayCards' => [83, 166, 170, 176, 179, 220, 220, 232]
         ],
     ],
     'Zamorak III - rsqake2' => [
@@ -50,7 +50,7 @@ $collections = [
         ],
         'choc-spatio-temporel' => [
             'sectionId' => 'section3',
-            'displayCards' => [29, 61, 67, 99, 125, 156, 156, 159, 166, 169, 173, 173, 174, 205]
+            'displayCards' => [29, 61, 67, 99, 125, 156, 156, 159, 169, 173, 173, 174, 205]
         ],
         'lumiere-triomphale' => [
             'sectionId' => 'section4',
@@ -58,7 +58,7 @@ $collections = [
         ],
         'rejouissances-rayonnantes' => [
             'sectionId' => 'section5',
-            'displayCards' => [43, 75]
+            'displayCards' => [43, 75, 76]
         ],
         'gardiens-astraux' => [
             'sectionId' => 'section6',
@@ -74,7 +74,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [100]
+            'displayCards' => [100, 170]
         ],
     ],
     'Zamorak IV - rsqake3' => [
@@ -84,11 +84,11 @@ $collections = [
         ],
         'l-ile-fabuleuse' => [
             'sectionId' => 'section2',
-            'displayCards' => [32, 72, 72]
+            'displayCards' => [32, 70, 72, 72]
         ],
         'choc-spatio-temporel' => [
             'sectionId' => 'section3',
-            'displayCards' => [49, 110, 110, 119, 119, 125, 157, 158, 160, 164, 168, 169, 171, 172, 173, 174, 178, 178, 179, 200]
+            'displayCards' => [49, 110, 110, 119, 119, 125, 158, 160, 164, 169, 171, 172, 173, 174, 178, 178, 179, 200]
         ],
         'lumiere-triomphale' => [
             'sectionId' => 'section4',
@@ -100,7 +100,7 @@ $collections = [
         ],
         'gardiens-astraux' => [
             'sectionId' => 'section6',
-            'displayCards' => [58, 87, 156, 162, 167, 174, 176, 176, 177, 178, 178, 179, 184, 184, 215, 228, 234, 236]
+            'displayCards' => [58, 87, 156, 162, 167, 173, 174, 176, 176, 177, 178, 178, 179, 184, 184, 215, 228, 234, 236]
         ],
         'crise-interdimensionnelle' => [
             'sectionId' => 'section7',
@@ -122,11 +122,11 @@ $collections = [
         ],
         'l-ile-fabuleuse' => [
             'sectionId' => 'section2',
-            'displayCards' => [3]
+            'displayCards' => [3, 72, 73]
         ],
         'choc-spatio-temporel' => [
             'sectionId' => 'section3',
-            'displayCards' => [7, 99, 119, 125, 161, 164, 168, 171, 173, 175, 176, 178, 186, 203, 204]
+            'displayCards' => [7, 99, 119, 125, 161, 164, 168, 175, 176, 178, 186, 203, 204]
         ],
         'lumiere-triomphale' => [
             'sectionId' => 'section4',
@@ -150,7 +150,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [65, 167, 178, 178, 199, 203, 238]
+            'displayCards' => [34, 65, 167, 178, 178, 199, 203, 238]
         ],
     ],
     'Zamorak VI - rsqake5' => [
@@ -164,15 +164,15 @@ $collections = [
         ],
         'choc-spatio-temporel' => [
             'sectionId' => 'section3',
-            'displayCards' => [7, 49, 49, 29, 160, 165, 167, 167, 172, 178, 193, 201, 204]
+            'displayCards' => [7, 49, 49, 29, 167, 167, 172, 178, 193, 201, 204]
         ],
         'lumiere-triomphale' => [
             'sectionId' => 'section4',
-            'displayCards' => [47, 57, 71, 76, 79, 94]
+            'displayCards' => [47, 57, 71, 81, 76, 79, 94]
         ],
         'rejouissances-rayonnantes' => [
             'sectionId' => 'section5',
-            'displayCards' => [76, 96]
+            'displayCards' => [74, 76, 96]
         ],
         'gardiens-astraux' => [
             'sectionId' => 'section6',
@@ -188,7 +188,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [65, 162, 183, 188]
+            'displayCards' => [65, 162, 174, 183, 188, 225]
         ],
     ]
 ];

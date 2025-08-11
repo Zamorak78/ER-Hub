@@ -15,13 +15,13 @@ $collections = [
     //     'notGottenCards' => [],
     //     'displayCards' => [] 
     // ],
-    'choc-spatio-temporel' => [
-        'title' => 'Choc Spatio-temporel',
-        'sectionId' => 'section3',
-        'totalCards' => 207,
-        'notGottenCards' => [],
-        'displayCards' => [157, 160, 165, 166, 168, 171, 173]
-    ],
+    // 'choc-spatio-temporel' => [
+    //     'title' => 'Choc Spatio-temporel',
+    //     'sectionId' => 'section3',
+    //     'totalCards' => 207,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ],
     // 'lumiere-triomphale' => [
     //     'title' => 'Lumière Triomphale',
     //     'sectionId' => 'section4',
@@ -61,7 +61,7 @@ $collections = [
         'title' => 'Sagesse entre Ciel et Mer',
         'sectionId' => 'section9',
         'totalCards' => 241,
-        'notGottenCards' => [34, 112, 163, 175, 180, 181, 184],
+        'notGottenCards' => [112, 163, 175, 180, 181, 184],
         'displayCards' => [34, 112, 162, 163, 166, 167, 169, 172, 175, 178, 179, 180, 181, 183, 184]
     ]
     // 'promo-a' => [
