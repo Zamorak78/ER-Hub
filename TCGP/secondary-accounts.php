@@ -36,7 +36,7 @@ $collections = [
         ],
         'sagesse-entre-ciel-et-mer' => [
             'sectionId' => 'section9',
-            'displayCards' => [83, 166, 170, 176, 179, 220, 220, 232]
+            'displayCards' => [83, 166, 170, 176, 179, 220, 220, 232, 232]
         ],
     ],
     'Zamorak III - rsqake2' => [
