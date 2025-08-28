@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secondary Accounts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="collections"></div>
+
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" src="" alt="Modal Image">
+    </div>
+
+    <script>
+    // Data from PHP, converted to JS
+    const collections = {
+        "Zamorak II - s20": {
+            "puissance-genetique": {
+                sectionId: "section1",
+                displayCards: [23,36,36,47,47,76,76,84,84,84,104,146,153,227,228,228,229,231,231,231,233,236,236,241,245,249,249,272,273]
+            },
+            "l-ile-fabuleuse": {
+                sectionId: "section2",
+                displayCards: [32]
+            },
+            "choc-spatio-temporel": {
+                sectionId: "section3",
+                displayCards: [7,7,49,49,67,67,110,156,158,159,159,160,164,171,172,173,176,191,204]
+            },
+            "lumiere-triomphale": {
+                sectionId: "section4",
+                displayCards: [22,94]
+            },
+            "rejouissances-rayonnantes": {
+                sectionId: "section5",
+                displayCards: [54]
+            },
+            "gardiens-astraux": {
+                sectionId: "section6",
+                displayCards: [23,122,104,163,167,167,171,173,186,211,237]
+            },
+            "crise-interdimensionnelle": {
+                sectionId: "section7",
+                displayCards: []
+            },
+            "la-clairiere-d-evoli": {
+                sectionId: "section8",
+                displayCards: [76,78]
+            },
+            "sagesse-entre-ciel-et-mer": {
+                sectionId: "section9",
+                displayCards: [83,166,170,176,179,220,220,232,232]
+            }
+        },
+        "Zamorak III - rsqake2": {
+            "puissance-genetique": {
+                sectionId: "section1",
+                displayCards: [23,36,36,36,41,47,76,84,146,227,228,228,235,235,237,238,252,278,281]
+            },
+            "l-ile-fabuleuse": {
+                sectionId: "section2",
+                displayCards: [32,32,46,59,72,82]
+            },
+            "choc-spatio-temporel": {
+                sectionId: "section3",
+                displayCards: [29,61,67,99,125,156,156,159,169,173,173,174,205]
+            },
+            "lumiere-triomphale": {
+                sectionId: "section4",
+                displayCards: [47,76,77,79]
+            },
+            "rejouissances-rayonnantes": {
+                sectionId: "section5",
+                displayCards: [43,75,76]
+            },
+            "gardiens-astraux": {
+                sectionId: "section6",
+                displayCards: [33,58,87,122,122,122,158,159,160,168,175,175,175,183,210,219,225,237,238]
+            },
+            "crise-interdimensionnelle": {
+                sectionId: "section7",
+                displayCards: []
+            },
+            "la-clairiere-d-evoli": {
+                sectionId: "section8",
+                displayCards: [24,24,92]
+            },
+            "sagesse-entre-ciel-et-mer": {
+                sectionId: "section9",
+                displayCards: [100,170,210]
+            }
+        },
+        "Zamorak IV - rsqake3": {
+            "puissance-genetique": {
+                sectionId: "section1",
+                displayCards: [4,41,47,76,96,228,228,231,232,236,244,252,270,271,274,279,280,281]
+            },
+            "l-ile-fabuleuse": {
+                sectionId: "section2",
+                displayCards: [32,70,72,72]
+            },
+            "choc-spatio-temporel": {
+                sectionId: "section3",
+                displayCards: [49,110,110,119,119,125,158,160,164,169,171,172,173,174,178,178,179,200]
+            },
+            "lumiere-triomphale": {
+                sectionId: "section4",
+                displayCards: [79,80]
+            },
+            "rejouissances-rayonnantes": {
+                sectionId: "section5",
+                displayCards: [54,78]
+            },
+            "gardiens-astraux": {
+                sectionId: "section6",
+                displayCards: [58,87,156,162,167,173,174,176,176,177,178,178,179,184,184,215,228,234,236]
+            },
+            "crise-interdimensionnelle": {
+                sectionId: "section7",
+                displayCards: []
+            },
+            "la-clairiere-d-evoli": {
+                sectionId: "section8",
+                displayCards: [57,70,96,104]
+            },
+            "sagesse-entre-ciel-et-mer": {
+                sectionId: "section9",
+                displayCards: [166,169,172,174,181]
+            }
+        },
+        "Zamorak V - rsqake4": {
+            "puissance-genetique": {
+                sectionId: "section1",
+                displayCards: [36,41,41,47,47,76,104,129,146,228,230,232,235,236,238,246,246,251,268,271,280]
+            },
+            "l-ile-fabuleuse": {
+                sectionId: "section2",
+                displayCards: [3,72,73]
+            },
+            "choc-spatio-temporel": {
+                sectionId: "section3",
+                displayCards: [7,99,119,125,161,164,168,175,176,178,186,203,204]
+            },
+            "lumiere-triomphale": {
+                sectionId: "section4",
+                displayCards: [10,76,77,84]
+            },
+            "rejouissances-rayonnantes": {
+                sectionId: "section5",
+                displayCards: []
+            },
+            "gardiens-astraux": {
+                sectionId: "section6",
+                displayCards: [12,104,111,159,161,162,162,163,168,171,172,174,174,193,197,208,234]
+            },
+            "crise-interdimensionnelle": {
+                sectionId: "section7",
+                displayCards: [71]
+            },
+            "la-clairiere-d-evoli": {
+                sectionId: "section8",
+                displayCards: []
+            },
+            "sagesse-entre-ciel-et-mer": {
+                sectionId: "section9",
+                displayCards: [34,65,167,178,178,189,199,203,238]
+            }
+        },
+        "Zamorak VI - rsqake5": {
+            "puissance-genetique": {
+                sectionId: "section1",
+                displayCards: [4,23,36,41,47,56,76,76,129,153,227,227,237,241,242,246,246,276,279]
+            },
+            "l-ile-fabuleuse": {
+                sectionId: "section2",
+                displayCards: [71]
+            },
+            "choc-spatio-temporel": {
+                sectionId: "section3",
+                displayCards: [7,49,49,29,167,167,172,178,193,201,204]
+            },
+            "lumiere-triomphale": {
+                sectionId: "section4",
+                displayCards: [47,57,71,81,76,79,94]
+            },
+            "rejouissances-rayonnantes": {
+                sectionId: "section5",
+                displayCards: [74,76,96]
+            },
+            "gardiens-astraux": {
+                sectionId: "section6",
+                displayCards: [12,33,51,58,58,104,156,163,164,176,177,185,189,198,201,203,207,208,214,227,231,232,236]
+            },
+            "crise-interdimensionnelle": {
+                sectionId: "section7",
+                displayCards: [6]
+            },
+            "la-clairiere-d-evoli": {
+                sectionId: "section8",
+                displayCards: [72,76]
+            },
+            "sagesse-entre-ciel-et-mer": {
+                sectionId: "section9",
+                displayCards: [65,65,65,162,174,183,188,225]
+            }
+        }
+    };
+
+    // Render collections
+    function renderCollections() {
+        const container = document.getElementById('collections');
+        for (const [collectionKey, collection] of Object.entries(collections)) {
+            const sectionDiv = document.createElement('div');
+            sectionDiv.className = 'section-header';
+            sectionDiv.innerHTML = `<h2 class="section-title">${collectionKey}</h2>`;
+            container.appendChild(sectionDiv);
+
+            const cardsDiv = document.createElement('div');
+            cardsDiv.className = 'card-collection';
+            cardsDiv.id = collectionKey;
+
+            for (const [subKey, subCollection] of Object.entries(collection)) {
+                const baseUrl = `https://image.pokemonpocket.fr/${subKey}`;
+                for (const cardNumber of subCollection.displayCards) {
+                    // No notGottenCards info, so all are 'gotten'
+                    const className = 'card-image-gotten';
+                    const cardDiv = document.createElement('div');
+                    cardDiv.className = 'card';
+                    cardDiv.onclick = () => openModal(`${baseUrl}/${cardNumber}.webp`);
+                    cardDiv.innerHTML = `<img src="${baseUrl}/${cardNumber}.webp" class="${className}">`;
+                    cardsDiv.appendChild(cardDiv);
+                }
+            }
+            container.appendChild(cardsDiv);
+        }
+    }
+
+    renderCollections();
+
+    // Modal logic
+    function openModal(imageSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        modal.style.display = "flex";
+        modalImg.src = imageSrc;
+    }
+    document.querySelector('.close-modal').onclick = function() {
+        document.getElementById('imageModal').style.display = "none";
+    }
+    document.getElementById('imageModal').onclick = function(e) {
+        if (e.target === this) {
+            this.style.display = "none";
+        }
+    }
+    </script>
+</body>
