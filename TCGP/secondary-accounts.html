@@ -13,7 +13,6 @@
     </div>
 
     <script>
-    // Data from PHP, converted to JS
     const collections = {
         "Zamorak II - s20": {
             "puissance-genetique": {
@@ -51,6 +50,10 @@
             "sagesse-entre-ciel-et-mer": {
                 sectionId: "section9",
                 displayCards: [83,166,170,176,179,220,220,232,232]
+            },
+            "source-secrete": {
+                sectionId: "section10",
+                displayCards: []
             }
         },
         "Zamorak III - rsqake2": {
@@ -89,6 +92,10 @@
             "sagesse-entre-ciel-et-mer": {
                 sectionId: "section9",
                 displayCards: [100,170,210,231]
+            },
+            "source-secrete": {
+                sectionId: "section10",
+                displayCards: []
             }
         },
         "Zamorak IV - rsqake3": {
@@ -127,6 +134,10 @@
             "sagesse-entre-ciel-et-mer": {
                 sectionId: "section9",
                 displayCards: [166,169,172,174,181]
+            },
+            "source-secrete": {
+                sectionId: "section10",
+                displayCards: []
             }
         },
         "Zamorak V - rsqake4": {
@@ -165,6 +176,10 @@
             "sagesse-entre-ciel-et-mer": {
                 sectionId: "section9",
                 displayCards: [34,65,167,178,178,189,199,203,238]
+            },
+            "source-secrete": {
+                sectionId: "section10",
+                displayCards: []
             }
         },
         "Zamorak VI - rsqake5": {
@@ -203,11 +218,14 @@
             "sagesse-entre-ciel-et-mer": {
                 sectionId: "section9",
                 displayCards: [65,65,65,162,174,183,188,225]
+            },
+            "source-secrete": {
+                sectionId: "section10",
+                displayCards: []
             }
         }
     };
 
-    // Render collections
     function renderCollections() {
         const container = document.getElementById('collections');
         for (const [collectionKey, collection] of Object.entries(collections)) {
@@ -223,7 +241,6 @@
             for (const [subKey, subCollection] of Object.entries(collection)) {
                 const baseUrl = `https://image.pokemonpocket.fr/${subKey}`;
                 for (const cardNumber of subCollection.displayCards) {
-                    // No notGottenCards info, so all are 'gotten'
                     const className = 'card-image-gotten';
                     const cardDiv = document.createElement('div');
                     cardDiv.className = 'card';
@@ -238,7 +255,6 @@
 
     renderCollections();
 
-    // Modal logic
     function openModal(imageSrc) {
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
