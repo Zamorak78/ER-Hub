@@ -5,7 +5,7 @@ $collections = [
         'title' => 'Source Secrète',
         'sectionId' => 'section10',
         'totalCards' => 105,
-        'notGottenCards' => [3, 12, 22, 61, 63, 68,
+        'notGottenCards' => [3, 12, 22, 61, 63,
          73, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 86, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 102, 103, 104]
     ]
 ];
