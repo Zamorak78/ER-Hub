@@ -63,6 +63,13 @@ $collections = [
         'totalCards' => 241,
         'notGottenCards' => [82],
         'displayCards' => [34, 82, 112, 163, 166, 167, 172, 178, 179, 181, 183]
+    ],
+    'source-secrete' => [
+        'title' => 'Source Secrète',
+        'sectionId' => 'section10',
+        'totalCards' => 105,
+        'notGottenCards' => [77],
+        'displayCards' => [3, 77]
     ]
     // 'promo-a' => [
     //     'title' => 'Promo-A',
