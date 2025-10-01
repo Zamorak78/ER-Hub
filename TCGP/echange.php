@@ -61,8 +61,8 @@ $collections = [
         'title' => 'Sagesse entre Ciel et Mer',
         'sectionId' => 'section9',
         'totalCards' => 241,
-        'notGottenCards' => [82],
-        'displayCards' => [82, 163, 166, 167, 172, 178, 179, 181, 183]
+        'notGottenCards' => [],
+        'displayCards' => [163, 166, 167, 172, 178, 179, 181, 183]
     ],
     'source-secrete' => [
         'title' => 'Source Secrète',
