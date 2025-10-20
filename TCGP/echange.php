@@ -36,13 +36,13 @@ $collections = [
     //     'notGottenCards' => [],
     //     'displayCards' => []
     // ],
-    'gardiens-astraux' => [
-        'title' => 'Gardiens Astraux',
-        'sectionId' => 'section6',
-        'totalCards' => 239,
-        'notGottenCards' => [],
-        'displayCards' => [178, 179]
-    ],
+    // 'gardiens-astraux' => [
+    //     'title' => 'Gardiens Astraux',
+    //     'sectionId' => 'section6',
+    //     'totalCards' => 239,
+    //     'notGottenCards' => [],
+    //     'displayCards' => []
+    // ],
     // 'crise-interdimensionnelle' => [
     //     'title' => 'Crise Interdimensionnelle',
     //     'sectionId' => 'section7',
