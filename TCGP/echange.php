@@ -62,7 +62,7 @@ $collections = [
         'sectionId' => 'section9',
         'totalCards' => 241,
         'notGottenCards' => [],
-        'displayCards' => [163, 166, 167, 172, 178, 179, 181, 183]
+        'displayCards' => [172, 178, 179, 181, 183]
     ],
     'source-secrete' => [
         'title' => 'Source Secrète',
