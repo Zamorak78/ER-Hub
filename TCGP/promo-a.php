@@ -28,7 +28,8 @@ function generateCollectionHTML($collectionKey, $collection) {
     for ($i = 1; $i <= $collection['totalCards']; $i++) {
         $class = in_array($i, $collection['notGottenCards']) ? 'card-image-not-gotten' : 'card-image-gotten';
         $html .= <<<HTML
-        <div class="card" onclick="openModal('{$baseUrl}/{$i}.webp')">
+        <div class="card" onclick="openModal('{$baseUrl}/{$i}.png')">
+        <!-- <div class="card" onclick="openModal('{$baseUrl}/{$i}.webp')"> -->
             <img src="{$baseUrl}/{$i}.png" class="{$class}">
             <!-- <img src="{$baseUrl}/{$i}.webp" class="{$class}"> -->
         </div>
