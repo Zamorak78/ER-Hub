@@ -11,7 +11,8 @@ $collections = [
 
 // Function to generate the HTML for a collection
 function generateCollectionHTML($collectionKey, $collection) {
-    $baseUrl = "https://image.pokemonpocket.fr/{$collectionKey}";
+    $baseUrl = "https://www.media.pokekalos.fr/img/jeux/pocket/extensions/{$collectionKey}";
+    // $baseUrl = "https://image.pokemonpocket.fr/{$collectionKey}";
     
     $html = <<<HTML
     <div class="section-header">
@@ -28,7 +29,8 @@ function generateCollectionHTML($collectionKey, $collection) {
         $class = in_array($i, $collection['notGottenCards']) ? 'card-image-not-gotten' : 'card-image-gotten';
         $html .= <<<HTML
         <div class="card" onclick="openModal('{$baseUrl}/{$i}.webp')">
-            <img src="{$baseUrl}/{$i}.webp" class="{$class}">
+            <img src="{$baseUrl}/{$i}.png" class="{$class}">
+            <!-- <img src="{$baseUrl}/{$i}.webp" class="{$class}"> -->
         </div>
         HTML;
     }
