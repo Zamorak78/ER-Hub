@@ -45,7 +45,7 @@ function generateCollectionHTML($collectionKey, $collection) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Promo-A</title>
+    <title>Promo-B</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
